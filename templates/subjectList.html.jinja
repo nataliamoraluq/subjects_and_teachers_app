@@ -1,0 +1,19 @@
+{% extends 'base.html.jinja' %}
+{% block contentSubject %}
+  <h1> {% block title %} Subject list: {% endblock %}</h1>
+  <a href="{{url_for('add_subject')}}">Agregar</a> 
+  <div id="materiasListCont">
+        <ul>
+            {% for m in materias %}
+                <li> 
+                    <a href="/{{m._id}}">{{ m.nombreM }}</a> 
+                    <p>{{m.nombreProf}} </p> <p>{{m.apellidoProf}} </p> 
+                    <p>{{m.duracion}} </p> <p>{{m.notaMin}} </p>
+                    <a href="/modificar/{{m._id}}">Modificar</a> 
+                    <a href="/delete/{{m._id}}">Eliminar</a> 
+                </li>
+            {% endfor %}
+        </ul>
+  </div>
+ 
+{% endblock %}

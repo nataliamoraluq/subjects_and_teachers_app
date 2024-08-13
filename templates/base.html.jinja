@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" type="text/css"/>
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('subjects') }}">Lista elementos</a>
+        <a href="{{ url_for('add_subject') }}">Crear</a>
+    </nav>
+    {% for message in get_flashed_messages()  %}
+        <p style="color: red; font-weight: 600">{{ message }}</p>
+    {% endfor %}
+    <div class="content">
+        {% block contentSubject %} {% endblock %}
+    </div>
+</body>
+</html>

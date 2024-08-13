@@ -1,0 +1,74 @@
+html{
+    font-size: 1.5em;
+}
+
+#materiasListCont p {
+    /*font-size: 1.5em;*/
+    display: inline-block;
+}
+
+#materiasListCont a {
+    /*font-size: 1.5em;*/
+    color: rgb(94, 23, 227);
+}
+
+#materiasListCont{
+    background-color: rgb(244, 190, 255);
+    border-radius: 1.7em;
+    padding: 1em;
+    margin: 1em;
+    border: 1.2em;
+    color: rgb(128, 121, 255);
+    height: 60vh;
+    width: 60vw;
+    overflow-y: scroll;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.updateForm{
+    background-color: rgb(201, 221, 255);
+    border-radius: 1.7em;
+    height: 5%m;
+    width: 20%;
+    padding: 1em;
+    margin: 1em;
+    border: 1.2em;
+}
+
+.createForm{
+    background-color: rgb(176, 176, 255);
+    border-radius: 1.7em;
+    height: 5%m;
+    width: 20%;
+    padding: 1em;
+    margin: 1em;
+    border: 1.2em;
+    /*display: flex;
+    justify-content: center;*/
+    align-items: center;
+}
+
+form{
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="submit"]{
+    margin: 2%;
+}
+
+nav {
+    height: 10vh;
+    background-color: aliceblue;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}

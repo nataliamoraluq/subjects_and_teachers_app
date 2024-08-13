@@ -1,0 +1,26 @@
+{% extends 'base.html.jinja' %}
+{% block contentSubject %}
+<h1>{% block title %} Subject details {% endblock %}</h1>
+    <div id="subjectDetailsCont">
+        <ul>
+            <li>
+                <h2>Nombre de la materia: {{subjectX.nombreM}}</h2>
+            </li>
+            <li>
+                Objetivo: {{subjectX.objetM}}
+            </li>
+            <li>
+                Nombre del profesor: {{subjectX.nombreProf}} {{subjectX.apellidoProf}} .
+            </li>
+            <li>
+                ID del prof.: {{subjectX.idProf}}
+            </li>
+            <li>
+                Duracion materia: {{subjectX.duracion}}
+            </li>
+            <li>
+                Nota Min. para Aprobar: {{subjectX.notaMin}}
+            </li>
+        </ul>
+    </div>
+{% endblock %}

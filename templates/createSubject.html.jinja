@@ -1,0 +1,44 @@
+{% extends 'base.html.jinja' %}
+{% block contentSubject %}
+    <div class="createForm"> 
+        <h1> {% block title %} Add subject {% endblock %}</h1>
+        <form method="POST">
+            <div>
+                <label for="teacherFirstName">Teacher's First Name: </label><br>
+                <input type="string" name="teacherFirstName" placeholder="Nombre profesor">
+                <br>
+            </div>
+            <div>
+                <label for="teacherLastName">Teacher's Last Name: </label><br>
+                <input type="string" name="teacherLastName" placeholder="Apellido profesor">
+                <br>
+            </div>
+            <div>
+                <label for="teacherId">Teacher ID: </label><br>
+                <input type="string" name="teacherId" placeholder="Teacher ID">
+                <br>
+            </div>
+            <div>
+                <label for="subjectName">Subject's name:</label><br>
+                <input type="string" name="subjectName" placeholder="Subject Name">
+                <br>
+            </div>
+            <div>
+                <label for="subjectPurpose">Subject's purpose: </label><br>
+                <input type="string" name="subjectPurpose" placeholder="Subject purpose">
+                <br>
+            </div>
+            <div>
+                <label for="durationSubject"> Duration Subject: </label><br>
+                <input type="int" name="durationSubject" placeholder="Duration Subject">
+                <br>
+            </div>
+            <div>
+                <label for="minimumPassingGrade">Minimum Passing Grade: </label><br>
+                <input type="int" name="minimumPassingGrade" placeholder="Minimum Passing Grade">
+                <br>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+{% endblock %}
